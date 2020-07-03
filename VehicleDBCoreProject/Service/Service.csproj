@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\Repository.Common\Repository.Common.csproj" />
+    <ProjectReference Include="..\Service.Common\Service.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\.nuget\packages\automapper\9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Repository.Common">
+      <HintPath>..\Repository.Common\obj\Debug\netcoreapp3.1\Repository.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

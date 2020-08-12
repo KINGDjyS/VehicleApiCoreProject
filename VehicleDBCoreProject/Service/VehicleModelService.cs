@@ -1,49 +1,44 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using AutoMapper;
-using Model;
-using Model.Common;
-using Repository.Common;
-using Service.Common;
+using Vehicle.Common;
+using Vehicle.Model.Common;
+using Vehicle.Repository.Common;
+using Vehicle.Service.Common;
 
-namespace Service
+namespace Vehicle.Service
 {
     public class VehicleModelService : IVehicleModelService
     {
         protected IVehicleModelRepository Repository { get; private set; }
-        protected IMapper Mapper;
 
-        public VehicleModelService(IVehicleModelRepository repository, IMapper mapper)
+        public VehicleModelService(IVehicleModelRepository repository)
         {
             Repository = repository;
-            Mapper = mapper;
         }
 
         public async Task<IVehicleModel> AddVehicleModelAsync(IVehicleModel newModel)
         {
-            return Mapper.Map<IVehicleModel>(await Repository.AddVehicleModelAsync(Mapper.Map<DAL.Entities.VehicleModelEntity>(newModel)));
+            return await Repository.AddVehicleModelAsync(newModel);
         }
 
         public async Task<IVehicleModel> DeleteVehicleModelAsync(int id)
         {
-            return Mapper.Map<IVehicleModel>(await Repository.DeleteVehicleModelAsync(id));
+            return await Repository.DeleteVehicleModelAsync(id);
         }
 
         public async Task<IVehicleModel> GetVehicleModelAsync(int id)
         {
-            return Mapper.Map<IVehicleModel>(await Repository.GetVehicleModelAsync(id));
+            return await Repository.GetVehicleModelAsync(id);
         }
 
-        public async Task<List<IVehicleModel>> GetVehicleModelsAsync()
+        public async Task<List<IVehicleModel>> GetVehicleModelsAsync(Filtering filtering, Sorting sorting, Paging paging)
         {
-            return new List<IVehicleModel>(Mapper.Map<List<IVehicleModel>>(await Repository.GetVehicleModelsAsync()));
+            return await Repository.GetVehicleModelsAsync(filtering, sorting, paging);
         }
 
         public async Task<IVehicleModel> UpdateVehicleModelAsync(IVehicleModel changedModel)
         {
-            return Mapper.Map<IVehicleModel>(await Repository.UpdateVehicleModelAsync(Mapper.Map<DAL.Entities.VehicleModelEntity>(changedModel)));
+            return await Repository.UpdateVehicleModelAsync(changedModel);
         }
 
         public async Task<bool> ModelExists(int id)

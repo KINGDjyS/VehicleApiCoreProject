@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using DAL.Entities;
+using Vehicle.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DAL
+namespace Vehicle.DAL
 {
     public class VehicleDBContext : DbContext
     {

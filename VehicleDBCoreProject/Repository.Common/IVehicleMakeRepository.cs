@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using DAL.Entities;
+using Vehicle.Common;
+using Vehicle.Model.Common;
 
-namespace Repository.Common
+namespace Vehicle.Repository.Common
 {
     public interface IVehicleMakeRepository
     {
-        Task<List<VehicleMakeEntity>> GetVehicleMakersAsync();
-        Task<VehicleMakeEntity> GetVehicleMakerAsync(int id);
-        Task<VehicleMakeEntity> AddVehicleMakerAsync(VehicleMakeEntity newMaker);
-        Task<VehicleMakeEntity> UpdateVehicleMakerAsync(VehicleMakeEntity changedMaker);
-        Task<VehicleMakeEntity> DeleteVehicleMakerAsync(int id);
+        Task<List<IVehicleMake>> GetVehicleMakersAsync(Filtering filtering, Sorting sorting, Paging paging);
+        Task<IVehicleMake> GetVehicleMakerAsync(int id);
+        Task<IVehicleMake> AddVehicleMakerAsync(IVehicleMake newMaker);
+        Task<IVehicleMake> UpdateVehicleMakerAsync(IVehicleMake changedMaker);
+        Task<IVehicleMake> DeleteVehicleMakerAsync(int id);
         Task<bool> MakerExists(int id);
         
     }

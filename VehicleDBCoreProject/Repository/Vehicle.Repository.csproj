@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Model.Common\Vehicle.Model.Common.csproj" />
+    <ProjectReference Include="..\Model\Vehicle.Model.csproj" />
+    <ProjectReference Include="..\Repository.Common\Vehicle.Repository.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\..\..\.nuget\packages\autofac\5.2.0\lib\net461\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\.nuget\packages\automapper\9.0.0\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

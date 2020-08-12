@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Model.Common
+namespace Vehicle.Model.Common
 {
     public interface IVehicleModel
     {

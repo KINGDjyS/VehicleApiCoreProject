@@ -5007,11 +5007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
-      "projectName": "DAL",
-      "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj",
+      "projectName": "Vehicle.DAL",
+      "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj",
       "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5074,7 +5074,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

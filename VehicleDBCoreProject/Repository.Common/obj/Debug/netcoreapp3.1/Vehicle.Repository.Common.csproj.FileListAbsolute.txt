@@ -1,0 +1,16 @@
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.csprojAssemblyReference.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.AssemblyInfoInputs.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.AssemblyInfo.cs
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.csproj.CoreCompileInputs.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Repository.Common.deps.json
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Repository.Common.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Repository.Common.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.DAL.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.DAL.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.csproj.CopyComplete
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\obj\Debug\netcoreapp3.1\Vehicle.Repository.Common.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Model.Common.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Model.Common.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Repository.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.pdb

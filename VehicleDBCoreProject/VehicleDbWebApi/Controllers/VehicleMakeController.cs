@@ -1,17 +1,20 @@
-﻿using System.Threading.Tasks;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
+using Autofac.Features.Metadata;
 using Microsoft.AspNetCore.Mvc;
-using Model;
-using Service.Common;
+using Vehicle.Common;
+using Vehicle.Model;
+using Vehicle.Service.Common;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace VehicleDbWebApi.Controllers
+namespace Vehicle.VehicleDbWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class VehicleMakeController : ControllerBase
     {
-
         protected IVehicleMakeService Service { get; private set; }
 
         public VehicleMakeController(IVehicleMakeService service)
@@ -21,9 +24,12 @@ namespace VehicleDbWebApi.Controllers
 
         // GET: api/VehicleMake
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] Filtering filtering, [FromQuery]Sorting sorting, [FromQuery] Paging paging)
         {
-            return Ok(await Service.GetVehicleMakersAsync());
+            paging.PageSize = 3;
+            
+            var makers = await Service.GetVehicleMakersAsync(filtering, sorting, paging);
+            return Ok(makers);
         }
 
         // GET api/Vehicle/5

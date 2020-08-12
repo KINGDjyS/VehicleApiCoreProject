@@ -1,11 +1,13 @@
-﻿using System.Threading.Tasks;
+﻿using System.Text.Json;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Model;
-using Service.Common;
+using Vehicle.Common;
+using Vehicle.Model;
+using Vehicle.Service.Common;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace VehicleDbWebApi.Controllers
+namespace Vehicle.VehicleDbWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,9 +22,12 @@ namespace VehicleDbWebApi.Controllers
 
         // GET: api/VehicleModel
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] Filtering filtering, [FromQuery] Sorting sorting, [FromQuery] Paging paging)
         {
-            return Ok(await Service.GetVehicleModelsAsync());
+            paging.PageSize = 5;
+
+            var models = await Service.GetVehicleModelsAsync(filtering, sorting, paging);
+            return Ok(models);
         }
 
         // GET api/VehicleModel/5

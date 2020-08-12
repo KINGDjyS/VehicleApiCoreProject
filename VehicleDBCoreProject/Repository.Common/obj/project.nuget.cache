@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wwk81rnx4gVowQjs9/lq6Mps2YmNLntKr+CwqvRPh5DXcGikzH0jYrvmJiJg3bWFkmciGE++4/wbyUfUxIAcOA==",
+  "dgSpecHash": "+s9kYVAgN/LboKuL/VhRyfpOUDQCYwmeZJPecULVSIzXkO7UEfUErJHF3ogLYkZHVkRZ7PiG1keA3HSoVfXe8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj",
+  "projectFilePath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vida\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Vida\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

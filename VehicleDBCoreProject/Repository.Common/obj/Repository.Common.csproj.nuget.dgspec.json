@@ -4,12 +4,12 @@
     "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
-        "projectName": "DAL",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+        "projectName": "Vehicle.DAL",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -101,8 +101,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
               }
             }
           }

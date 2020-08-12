@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Model.Common;
+﻿using Vehicle.Model.Common;
 
-namespace Model
+namespace Vehicle.Model
 {
     public class VehicleModel : IVehicleModel
     {

@@ -1253,7 +1253,17 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "DAL/1.0.0": {
+      "Vehicle.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Vehicle.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vehicle.Common.dll": {}
+        }
+      },
+      "Vehicle.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -1261,23 +1271,48 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5"
         },
         "compile": {
-          "bin/placeholder/DAL.dll": {}
+          "bin/placeholder/Vehicle.DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DAL.dll": {}
+          "bin/placeholder/Vehicle.DAL.dll": {}
         }
       },
-      "Repository.Common/1.0.0": {
+      "Vehicle.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "DAL": "1.0.0"
+          "Vehicle.Model.Common": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Repository.Common.dll": {}
+          "bin/placeholder/Vehicle.Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Repository.Common.dll": {}
+          "bin/placeholder/Vehicle.Model.dll": {}
+        }
+      },
+      "Vehicle.Model.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Vehicle.Model.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vehicle.Model.Common.dll": {}
+        }
+      },
+      "Vehicle.Repository.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Vehicle.Common": "1.0.0",
+          "Vehicle.DAL": "1.0.0",
+          "Vehicle.Model.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Vehicle.Repository.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vehicle.Repository.Common.dll": {}
         }
       }
     }
@@ -4950,20 +4985,37 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "DAL/1.0.0": {
+    "Vehicle.Common/1.0.0": {
       "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
+      "path": "../Vehicle.Common/Vehicle.Common.csproj",
+      "msbuildProject": "../Vehicle.Common/Vehicle.Common.csproj"
     },
-    "Repository.Common/1.0.0": {
+    "Vehicle.DAL/1.0.0": {
       "type": "project",
-      "path": "../Repository.Common/Repository.Common.csproj",
-      "msbuildProject": "../Repository.Common/Repository.Common.csproj"
+      "path": "../DAL/Vehicle.DAL.csproj",
+      "msbuildProject": "../DAL/Vehicle.DAL.csproj"
+    },
+    "Vehicle.Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Vehicle.Model.csproj",
+      "msbuildProject": "../Model/Vehicle.Model.csproj"
+    },
+    "Vehicle.Model.Common/1.0.0": {
+      "type": "project",
+      "path": "../Model.Common/Vehicle.Model.Common.csproj",
+      "msbuildProject": "../Model.Common/Vehicle.Model.Common.csproj"
+    },
+    "Vehicle.Repository.Common/1.0.0": {
+      "type": "project",
+      "path": "../Repository.Common/Vehicle.Repository.Common.csproj",
+      "msbuildProject": "../Repository.Common/Vehicle.Repository.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Repository.Common >= 1.0.0"
+      "Vehicle.Model >= 1.0.0",
+      "Vehicle.Model.Common >= 1.0.0",
+      "Vehicle.Repository.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4972,11 +5024,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj",
-      "projectName": "Repository",
-      "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository\\Vehicle.Repository.csproj",
+      "projectName": "Vehicle.Repository",
+      "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository\\Vehicle.Repository.csproj",
       "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4992,8 +5044,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj": {
-              "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj"
+            "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj": {
+              "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj"
+            },
+            "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model\\Vehicle.Model.csproj": {
+              "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model\\Vehicle.Model.csproj"
+            },
+            "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj": {
+              "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj"
             }
           }
         }
@@ -5021,7 +5079,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

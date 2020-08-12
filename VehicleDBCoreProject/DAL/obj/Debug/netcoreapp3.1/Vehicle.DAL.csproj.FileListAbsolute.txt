@@ -1,0 +1,11 @@
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.AssemblyInfoInputs.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.AssemblyInfo.cs
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehicle.DAL.deps.json
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehicle.DAL.runtimeconfig.json
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehicle.DAL.runtimeconfig.dev.json
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehicle.DAL.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehicle.DAL.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.genruntimeconfig.cache

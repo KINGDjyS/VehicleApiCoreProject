@@ -6,10 +6,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Repository;
-using Repository.Common;
-using Service;
-using Service.Common;
+using Vehicle.Repository;
+using Vehicle.Service;
 
 namespace VehicleDbWebApi
 {
@@ -27,12 +25,12 @@ namespace VehicleDbWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<DAL.VehicleDBContext>();
+            services.AddDbContext<Vehicle.DAL.VehicleDBContext>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterType<ServiceMapper>().As<Profile>();
+            builder.RegisterType<Mapping>().As<Profile>();
             builder.Register(c => new MapperConfiguration(cfg =>
             {
                 foreach (var profile in c.Resolve<IEnumerable<Profile>>())
@@ -43,11 +41,8 @@ namespace VehicleDbWebApi
 
             builder.Register(c => c.Resolve<MapperConfiguration>().CreateMapper(c.Resolve)).As<IMapper>().InstancePerLifetimeScope();
 
-            builder.RegisterType<VehicleMakeRepository>().As<IVehicleMakeRepository>().InstancePerLifetimeScope();
-            builder.RegisterType<VehicleMakeService>().As<IVehicleMakeService>();
-
-            builder.RegisterType<VehicleModelRepository>().As<IVehicleModelRepository>().InstancePerLifetimeScope();
-            builder.RegisterType<VehicleModelService>().As<IVehicleModelService>();
+            builder.RegisterModule(new RepositoryDIModule());
+            builder.RegisterModule(new ServiceDIModule());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

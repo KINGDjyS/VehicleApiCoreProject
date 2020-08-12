@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using DAL.Entities;
+using Vehicle.Common;
+using Vehicle.Model.Common;
 
-namespace Repository.Common
+namespace Vehicle.Repository.Common
 {
     public interface IVehicleModelRepository
     {
-        Task<List<VehicleModelEntity>> GetVehicleModelsAsync();
-        Task<VehicleModelEntity> GetVehicleModelAsync(int id);
-        Task<VehicleModelEntity> AddVehicleModelAsync(VehicleModelEntity newModel);
-        Task<VehicleModelEntity> UpdateVehicleModelAsync(VehicleModelEntity changedModel);
-        Task<VehicleModelEntity> DeleteVehicleModelAsync(int id);
+        Task<List<IVehicleModel>> GetVehicleModelsAsync(Filtering filtering, Sorting sorting, Paging paging);
+        Task<IVehicleModel> GetVehicleModelAsync(int id);
+        Task<IVehicleModel> AddVehicleModelAsync(IVehicleModel newModel);
+        Task<IVehicleModel> UpdateVehicleModelAsync(IVehicleModel changedModel);
+        Task<IVehicleModel> DeleteVehicleModelAsync(int id);
         Task<bool> ModelExists(int id);
 
     }

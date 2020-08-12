@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vBs+PZottlZj11Q0yOlOMxKkKGWsEKwHJF2B1tLb73VznZfQVyUYwI0AU+b57C/8gJaXQgYHEgl1VPUntpJuAw==",
+  "dgSpecHash": "Tc5uHmHXzIY3R2Ox2Kf2/QWMkE6AKIyMar/8Ne8+lPZtrTQEj2xFjDgfVEvlBZ1ZTEzou41IhwbbPN6UNu+QwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\VehicleDbWebApi\\VehicleDbWebApi.csproj",
+  "projectFilePath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\VehicleDbWebApi\\Vehicle.VehicleDbWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vida\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\Vida\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

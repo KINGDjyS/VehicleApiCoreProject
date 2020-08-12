@@ -4,12 +4,12 @@
     "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\VehicleDbWebApi\\VehicleDbWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
-        "projectName": "DAL",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+        "projectName": "Vehicle.DAL",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -78,12 +78,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj",
-        "projectName": "Model.Common",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+        "projectName": "Vehicle.Model.Common",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\obj\\",
         "projectStyle": "PackageReference",
@@ -130,12 +130,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj",
-        "projectName": "Model",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj",
+        "projectName": "Vehicle.Model",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\obj\\",
         "projectStyle": "PackageReference",
@@ -153,8 +153,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj"
               }
             }
           }
@@ -186,12 +186,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj",
-        "projectName": "Repository.Common",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
+        "projectName": "Vehicle.Repository.Common",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
@@ -209,8 +209,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
               }
             }
           }
@@ -242,12 +242,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Vehicle.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj",
-        "projectName": "Repository",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Vehicle.Repository.csproj",
+        "projectName": "Vehicle.Repository",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Vehicle.Repository.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\obj\\",
         "projectStyle": "PackageReference",
@@ -265,8 +265,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj"
               }
             }
           }
@@ -298,12 +298,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Service.Common.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Service.Common.csproj",
-        "projectName": "Service.Common",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Service.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj",
+        "projectName": "Vehicle.Service.Common",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\obj\\",
         "projectStyle": "PackageReference",
@@ -321,11 +321,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Model.Common.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj"
               },
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj"
               }
             }
           }
@@ -357,12 +357,12 @@
         }
       }
     },
-    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Service.csproj": {
+    "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Vehicle.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Service.csproj",
-        "projectName": "Service",
-        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Vehicle.Service.csproj",
+        "projectName": "Vehicle.Service",
+        "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Vehicle.Service.csproj",
         "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -380,14 +380,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Model.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Model\\Vehicle.Model.csproj"
               },
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Repository.Common.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj"
               },
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Service.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Service.Common.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj"
               }
             }
           }
@@ -442,14 +442,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\DAL.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
               },
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Repository.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Vehicle.Repository.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Repository\\Vehicle.Repository.csproj"
               },
-              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Service.csproj"
+              "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Vehicle.Service.csproj": {
+                "projectPath": "C:\\Users\\Vida\\source\\repos\\VehicleDBCoreProject\\Service\\Vehicle.Service.csproj"
               }
             }
           }

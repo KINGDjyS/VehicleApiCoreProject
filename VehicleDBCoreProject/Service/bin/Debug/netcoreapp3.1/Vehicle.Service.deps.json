@@ -892,6 +892,7 @@
       "Vehicle.Service.Common/1.0.0": {
         "dependencies": {
           "Vehicle.Common": "1.0.0",
+          "Vehicle.DAL": "1.0.0",
           "Vehicle.Model": "1.0.0",
           "Vehicle.Model.Common": "1.0.0"
         },

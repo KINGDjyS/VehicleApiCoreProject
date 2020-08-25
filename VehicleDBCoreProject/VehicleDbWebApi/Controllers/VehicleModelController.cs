@@ -61,7 +61,7 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
             if (await Service.ModelExists(id))
             {
-                await Service.UpdateVehicleModelAsync(changeModel);
+                await Service.UpdateVehicleModelAsync(id, changeModel);
                 return Ok();
             }
 

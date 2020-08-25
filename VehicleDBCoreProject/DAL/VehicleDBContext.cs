@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Threading.Tasks;
 using Vehicle.DAL.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Vehicle.DAL
 {
-    public class VehicleDBContext : DbContext
+    public class VehicleDBContext : DbContext, IVehicleDBContext
     {
         public VehicleDBContext()
         {
@@ -57,6 +56,26 @@ namespace Vehicle.DAL
                 new VehicleModelEntity { VehicleModelId = 14, Name = "Arteon", Abrv = "ART", VehicleMakeId = 5 },
                 new VehicleModelEntity { VehicleModelId = 15, Name = "228 Gran Coupe", Abrv = "228", VehicleMakeId = 1 }
                 );
+        }
+
+        public new DbSet<T> Set<T>() where T : class
+        {
+            return base.Set<T>();
+        }
+
+        public virtual async Task<int> SaveChangesAsync()
+        {
+            return await base.SaveChangesAsync();
+        }
+
+        public override EntityEntry Entry(object entity)
+        {
+            return base.Entry(entity);
+        }
+
+        public override void Dispose()
+        {
+            base.Dispose();
         }
     }
 }

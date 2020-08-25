@@ -21,9 +21,10 @@ namespace Vehicle.Service
             return await Repository.AddVehicleModelAsync(newModel);
         }
 
-        public async Task<IVehicleModel> DeleteVehicleModelAsync(int id)
+        public async Task<int> DeleteVehicleModelAsync(int id)
         {
-            return await Repository.DeleteVehicleModelAsync(id);
+            await Repository.DeleteVehicleModelAsync(id);
+            return 1;
         }
 
         public async Task<IVehicleModel> GetVehicleModelAsync(int id)
@@ -36,9 +37,9 @@ namespace Vehicle.Service
             return await Repository.GetVehicleModelsAsync(filtering, sorting, paging);
         }
 
-        public async Task<IVehicleModel> UpdateVehicleModelAsync(IVehicleModel changedModel)
+        public async Task<IVehicleModel> UpdateVehicleModelAsync(int id, IVehicleModel changedModel)
         {
-            return await Repository.UpdateVehicleModelAsync(changedModel);
+            return await Repository.UpdateVehicleModelAsync(id, changedModel);
         }
 
         public async Task<bool> ModelExists(int id)

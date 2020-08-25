@@ -29,14 +29,15 @@ namespace Vehicle.Service
             return await Repository.AddVehicleMakerAsync(newMaker);
         }
 
-        public async Task<IVehicleMake> UpdateVehicleMakerAsync(IVehicleMake changedMaker)
+        public async Task<IVehicleMake> UpdateVehicleMakerAsync(int id, IVehicleMake changedMaker)
         {
-            return await Repository.UpdateVehicleMakerAsync(changedMaker);
+            return await Repository.UpdateVehicleMakerAsync(id, changedMaker);
         }
 
-        public async Task<IVehicleMake> DeleteVehicleMakerAsync(int id)
+        public async Task<int> DeleteVehicleMakerAsync(int id)
         {
-            return await Repository.DeleteVehicleMakerAsync(id);
+            await Repository.DeleteVehicleMakerAsync(id);
+            return 1;
         }
 
         public async Task<bool> MakerExists(int id)

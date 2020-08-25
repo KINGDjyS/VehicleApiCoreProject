@@ -14,3 +14,5 @@ C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\obj\Debug\netcore
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\obj\Debug\netcoreapp3.1\Vehicle.Service.Common.pdb
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.dll
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.pdb
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\bin\Debug\netcoreapp3.1\Vehicle.DAL.dll
+C:\Users\Vida\source\repos\VehicleDBCoreProject\Service.Common\bin\Debug\netcoreapp3.1\Vehicle.DAL.pdb

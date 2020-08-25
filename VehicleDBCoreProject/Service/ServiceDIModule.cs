@@ -1,4 +1,7 @@
-﻿using Autofac;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Autofac;
 using Vehicle.Service.Common;
 
 namespace Vehicle.Service

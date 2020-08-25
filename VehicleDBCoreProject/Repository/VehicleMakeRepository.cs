@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Vehicle.DAL;
 using Microsoft.EntityFrameworkCore;
 using Vehicle.Repository.Common;
 using AutoMapper;
@@ -13,73 +12,74 @@ namespace Vehicle.Repository
 {
     public class VehicleMakeRepository : IVehicleMakeRepository
     {
-        protected VehicleDBContext Context { get; private set; }
+        protected IUnitOfWork UnitOfWork { get; private set; }
         protected IMapper Mapper;
 
-        public VehicleMakeRepository(VehicleDBContext context, IMapper mapper)
+        public VehicleMakeRepository(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            if (context == null)
-            {
-                throw new ArgumentNullException("Makers DBContext");
-            }
-            Context = context;
+            UnitOfWork = unitOfWork;
+            UnitOfWork.CreateMakerRepository();
             Mapper = mapper;
         }
         public async Task<IVehicleMake> GetVehicleMakerAsync(int id)
         {
-            return Mapper.Map<IVehicleMake>(await Context.VehicleMakers.Where(m => m.VehicleMakeId == id).FirstOrDefaultAsync());
+            return Mapper.Map<IVehicleMake>(await UnitOfWork.VehicleMakeRepository.GetById(id));
         }
 
         public async Task<List<IVehicleMake>> GetVehicleMakersAsync(Filtering filtering, Sorting sorting, Paging paging)
         {
+            var make = await UnitOfWork.VehicleMakeRepository.Get();
             if (!String.IsNullOrEmpty(filtering.SearchName))
             {
-                return new List<IVehicleMake>(Mapper.Map<List<IVehicleMake>>(await Context.VehicleMakers.Where(f => f.Name.Contains(filtering.SearchName)).OrderBy(o => o.Name).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
+                return new List<IVehicleMake>(Mapper.Map<List<IVehicleMake>>(await make.Where(f => f.Name.Contains(filtering.SearchName)).OrderBy(o => o.Name).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
             }
-            return new List<IVehicleMake>(Mapper.Map<List<IVehicleMake>>(await SortVehicleMakers(sorting).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
+            return new List<IVehicleMake>(Mapper.Map<List<IVehicleMake>>(await SortVehicleMakers(make, sorting).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
         }
 
-        private IQueryable<DAL.Entities.VehicleMakeEntity> SortVehicleMakers(Sorting sorting)
+        private IQueryable<DAL.Entities.VehicleMakeEntity> SortVehicleMakers(IQueryable<Vehicle.DAL.Entities.VehicleMakeEntity> makers, Sorting sorting)
         {
             switch (sorting.SortBy)
             {
                 case "Abrv Desc":
-                    return Context.VehicleMakers.OrderByDescending(o => o.Abrv);
+                    return makers.OrderByDescending(o => o.Abrv);
                 case "Abrv":
-                    return Context.VehicleMakers.OrderBy(o => o.Abrv);
+                    return makers.OrderBy(o => o.Abrv);
                 case "Name Desc":
-                    return Context.VehicleMakers.OrderByDescending(o => o.Name);
+                    return makers.OrderByDescending(o => o.Name);
                 default:
-                    return Context.VehicleMakers.OrderBy(o => o.Name);
+                    return makers.OrderBy(o => o.Name);
             }
         }
 
         public async Task<IVehicleMake> AddVehicleMakerAsync(IVehicleMake newMaker)
         {
-            Context.VehicleMakers.Add(Mapper.Map<Vehicle.DAL.Entities.VehicleMakeEntity>(newMaker));
-            await Context.SaveChangesAsync();
+            await UnitOfWork.VehicleMakeRepository.Add(Mapper.Map<Vehicle.DAL.Entities.VehicleMakeEntity>(newMaker));
+            await UnitOfWork.CommitAsync();
             return newMaker;
         }
 
-        public async Task<IVehicleMake> UpdateVehicleMakerAsync(IVehicleMake changedMaker)
+        public async Task<IVehicleMake> UpdateVehicleMakerAsync(int id, IVehicleMake changedMaker)
         {
-            var make = Context.VehicleMakers.Attach(Mapper.Map<Vehicle.DAL.Entities.VehicleMakeEntity>(changedMaker));
-            make.State = EntityState.Modified;
-            await Context.SaveChangesAsync();
-            return changedMaker;
+            var maker = await UnitOfWork.VehicleMakeRepository.Update(id, Mapper.Map<Vehicle.DAL.Entities.VehicleMakeEntity>(changedMaker));
+            await UnitOfWork.CommitAsync();
+            return Mapper.Map<IVehicleMake>(maker);
         }
 
-        public async Task<IVehicleMake> DeleteVehicleMakerAsync(int id)
+        public async Task<int> DeleteVehicleMakerAsync(int id)
         {
-            Vehicle.DAL.Entities.VehicleMakeEntity make = Context.VehicleMakers.Find(id);
-            Context.VehicleMakers.Remove(make);
-            await Context.SaveChangesAsync();
-            return Mapper.Map<IVehicleMake>(make);
+            var maker = UnitOfWork.VehicleMakeRepository.GetById(id);
+            await UnitOfWork.VehicleMakeRepository.Delete(maker.Result);
+            await UnitOfWork.CommitAsync();
+            return 1;
         }
 
         public async Task<bool> MakerExists(int id)
         {
-            return await Context.VehicleMakers.AnyAsync(m => m.VehicleMakeId == id);
+            if (await UnitOfWork.VehicleMakeRepository.GetById(id) == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

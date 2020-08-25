@@ -9,3 +9,4 @@ C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\bin\Debug\netcoreapp3.1\Vehi
 C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.dll
 C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.pdb
 C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.genruntimeconfig.cache
+C:\Users\Vida\source\repos\VehicleDBCoreProject\DAL\obj\Debug\netcoreapp3.1\Vehicle.DAL.csprojAssemblyReference.cache

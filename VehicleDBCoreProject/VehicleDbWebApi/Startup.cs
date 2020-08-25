@@ -7,7 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Vehicle.Repository;
+using Vehicle.Repository.Common;
 using Vehicle.Service;
+using Vehicle.Service.Common;
 
 namespace VehicleDbWebApi
 {

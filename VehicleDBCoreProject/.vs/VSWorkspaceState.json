@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\VehicleDbWebApi",
+    "\\VehicleDbWebApi\\Controllers"
   ],
-  "SelectedNode": "\\VehicleDBCoreProject.sln",
+  "SelectedNode": "\\VehicleDbWebApi\\Controllers\\VehicleMakeController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj": {}
+    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj": {
+    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
         "projectName": "Vehicle.DAL",
-        "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj",
-        "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+        "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj": {
+    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
         "projectName": "Vehicle.Model.Common",
-        "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj",
-        "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\obj\\",
+        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+        "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,21 +126,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj": {
+    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
         "projectName": "Vehicle.Repository.Common",
-        "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\Vehicle.Repository.Common.csproj",
-        "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Repository.Common\\obj\\",
+        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
+        "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -153,14 +153,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj": {
-                "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\DAL\\Vehicle.DAL.csproj"
+              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
               },
-              "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj"
+              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj"
               },
-              "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\Vehicle.Common.csproj": {
-                "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\Vehicle.Common.csproj"
+              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj"
               }
             }
           }
@@ -188,21 +188,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\Vehicle.Common.csproj": {
+    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\Vehicle.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
         "projectName": "Vehicle.Common",
-        "projectPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\Vehicle.Common.csproj",
-        "packagesPath": "C:\\Users\\Vida\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Vehicle.Common\\obj\\",
+        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
+        "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vida\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -240,7 +240,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

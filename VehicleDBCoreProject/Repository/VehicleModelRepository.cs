@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Vehicle.DAL;
 using Microsoft.EntityFrameworkCore;
 using Vehicle.Repository.Common;
 using AutoMapper;
@@ -13,77 +12,78 @@ namespace Vehicle.Repository
 {
     public class VehicleModelRepository : IVehicleModelRepository
     {
-        protected VehicleDBContext Context { get; private set; }
+        protected IUnitOfWork UnitOfWork { get; private set; }
         protected IMapper Mapper;
 
-        public VehicleModelRepository(VehicleDBContext context, IMapper mapper)
+        public VehicleModelRepository(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            if (context == null)
-            {
-                throw new ArgumentNullException("Models DBContext");
-            }
-            Context = context;
+            UnitOfWork = unitOfWork;
+            UnitOfWork.CreateModelRepository();
             Mapper = mapper;
         }
         public async Task<IVehicleModel> AddVehicleModelAsync(IVehicleModel newModel)
         {
-            Context.VehicleModels.Add(Mapper.Map<Vehicle.DAL.Entities.VehicleModelEntity>(newModel));
-            await Context.SaveChangesAsync();
+            await UnitOfWork.VehicleModelRepository.Add(Mapper.Map<Vehicle.DAL.Entities.VehicleModelEntity>(newModel));
+            await UnitOfWork.CommitAsync();
             return newModel;
         }
 
-        public async Task<IVehicleModel> DeleteVehicleModelAsync(int id)
+        public async Task<int> DeleteVehicleModelAsync(int id)
         {
-            Vehicle.DAL.Entities.VehicleModelEntity model = Context.VehicleModels.Find(id);
-            Context.VehicleModels.Remove(model);
-            await Context.SaveChangesAsync();
-            return Mapper.Map<IVehicleModel>(model);
+            var model = UnitOfWork.VehicleModelRepository.GetById(id);
+            await UnitOfWork.VehicleModelRepository.Delete(model.Result);
+            await UnitOfWork.CommitAsync();
+            return 1;
         }
 
         public async Task<IVehicleModel> GetVehicleModelAsync(int id)
         {
-            return Mapper.Map<IVehicleModel>(await Context.VehicleModels.Where(m => m.VehicleModelId == id).FirstOrDefaultAsync());
+            return Mapper.Map<IVehicleModel>(await UnitOfWork.VehicleModelRepository.GetById(id));
         }
 
         public async Task<List<IVehicleModel>> GetVehicleModelsAsync(Filtering filtering, Sorting sorting, Paging paging)
         {
+            var models = await UnitOfWork.VehicleModelRepository.Get();
             if (!String.IsNullOrEmpty(filtering.SearchName))
             {
-                return new List<IVehicleModel>(Mapper.Map<List<IVehicleModel>>(await Context.VehicleModels.Where(f => f.Name.Contains(filtering.SearchName)).OrderBy(o => o.Name).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
+                return new List<IVehicleModel>(Mapper.Map<List<IVehicleModel>>(await models.Where(f => f.Name.Contains(filtering.SearchName)).OrderBy(o => o.Name).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
             }
-            return new List<IVehicleModel>(Mapper.Map<List<IVehicleModel>>(await SortVehicleModels(sorting).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
+            return new List<IVehicleModel>(Mapper.Map<List<IVehicleModel>>(await SortVehicleModels(models, sorting).Skip((paging.CurrentPage - 1) * paging.PageSize).Take(paging.PageSize).ToListAsync()));
         }
 
-        private IQueryable<DAL.Entities.VehicleModelEntity>SortVehicleModels(Sorting sorting)
+        private IQueryable<DAL.Entities.VehicleModelEntity>SortVehicleModels(IQueryable<Vehicle.DAL.Entities.VehicleModelEntity> models, Sorting sorting)
         {
             switch (sorting.SortBy)
             {
                 case "Abrv Desc":
-                    return Context.VehicleModels.OrderByDescending(o => o.Abrv);
+                    return models.OrderByDescending(o => o.Abrv);
                 case "Abrv":
-                    return Context.VehicleModels.OrderBy(o => o.Abrv);
+                    return models.OrderBy(o => o.Abrv);
                 case "VehicleMakeId Desc":
-                    return Context.VehicleModels.OrderByDescending(o => o.VehicleMakeId);
+                    return models.OrderByDescending(o => o.VehicleMakeId);
                 case "VehicleMakeId":
-                    return Context.VehicleModels.OrderBy(o => o.VehicleMakeId);
+                    return models.OrderBy(o => o.VehicleMakeId);
                 case "Name Desc":
-                    return Context.VehicleModels.OrderByDescending(o => o.Name);
+                    return models.OrderByDescending(o => o.Name);
                 default:
-                    return Context.VehicleModels.OrderBy(o => o.Name);
+                    return models.OrderBy(o => o.Name);
             }
         }
 
-        public async Task<IVehicleModel> UpdateVehicleModelAsync(IVehicleModel changedModel)
+        public async Task<IVehicleModel> UpdateVehicleModelAsync(int id, IVehicleModel changedModel)
         {
-            var model = Context.VehicleModels.Attach(Mapper.Map<Vehicle.DAL.Entities.VehicleModelEntity>(changedModel));
-            model.State = EntityState.Modified;
-            await Context.SaveChangesAsync();
-            return changedModel;
+            var model = await UnitOfWork.VehicleModelRepository.Update(id, Mapper.Map<Vehicle.DAL.Entities.VehicleModelEntity>(changedModel));
+            await UnitOfWork.CommitAsync();
+            return Mapper.Map<IVehicleModel>(model);
         }
 
         public async Task<bool> ModelExists(int id)
         {
-            return await Context.VehicleModels.AnyAsync(m => m.VehicleModelId == id);
+            if (await UnitOfWork.VehicleModelRepository.GetById(id) == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Autofac.Features.Metadata;
 using Microsoft.AspNetCore.Mvc;
 using Vehicle.Common;
+using Vehicle.DAL.Entities;
 using Vehicle.Model;
 using Vehicle.Service.Common;
 
@@ -15,6 +16,7 @@ namespace Vehicle.VehicleDbWebApi.Controllers
     [ApiController]
     public class VehicleMakeController : ControllerBase
     {
+
         protected IVehicleMakeService Service { get; private set; }
 
         public VehicleMakeController(IVehicleMakeService service)
@@ -64,7 +66,7 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
             if (await Service.MakerExists(id))
             {
-                await Service.UpdateVehicleMakerAsync(changeMaker);
+                await Service.UpdateVehicleMakerAsync(id, changeMaker);
                 return Ok();
             }
 

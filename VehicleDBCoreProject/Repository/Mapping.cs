@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Vehicle.Model;
+using Vehicle.Model.Common;
 
 namespace Vehicle.Repository
 {
@@ -6,11 +8,11 @@ namespace Vehicle.Repository
     {
         public Mapping()
         {
-            CreateMap<DAL.Entities.VehicleMakeEntity, Vehicle.Model.VehicleMake>().ReverseMap();
-            CreateMap<DAL.Entities.VehicleMakeEntity, Vehicle.Model.Common.IVehicleMake>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleMakeEntity, VehicleMake>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleMakeEntity, IVehicleMake>().ReverseMap();
 
-            CreateMap<DAL.Entities.VehicleModelEntity, Vehicle.Model.VehicleModel>().ReverseMap();
-            CreateMap<DAL.Entities.VehicleModelEntity, Vehicle.Model.Common.IVehicleModel>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleModelEntity, VehicleModel>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleModelEntity, IVehicleModel>().ReverseMap();
         }
     }
 }

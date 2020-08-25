@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DAL\Vehicle.DAL.csproj" />
     <ProjectReference Include="..\Model.Common\Vehicle.Model.Common.csproj" />
     <ProjectReference Include="..\Model\Vehicle.Model.csproj" />
     <ProjectReference Include="..\Vehicle.Common\Vehicle.Common.csproj" />

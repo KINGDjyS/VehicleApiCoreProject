@@ -10,8 +10,8 @@ namespace Vehicle.Repository.Common
         Task<List<IVehicleModel>> GetVehicleModelsAsync(Filtering filtering, Sorting sorting, Paging paging);
         Task<IVehicleModel> GetVehicleModelAsync(int id);
         Task<IVehicleModel> AddVehicleModelAsync(IVehicleModel newModel);
-        Task<IVehicleModel> UpdateVehicleModelAsync(IVehicleModel changedModel);
-        Task<IVehicleModel> DeleteVehicleModelAsync(int id);
+        Task<IVehicleModel> UpdateVehicleModelAsync(int id, IVehicleModel changedModel);
+        Task<int> DeleteVehicleModelAsync(int id);
         Task<bool> ModelExists(int id);
 
     }

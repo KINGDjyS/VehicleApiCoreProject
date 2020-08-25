@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bhlZmNU8DNg9jI5L64qUkgSyZVF59vFM6GxeZ3eS9ucUD+S6QwwMpwlZ/WcuBmkfuj8c6dpfu90QwQ3hgyogKA==",
+  "dgSpecHash": "BFBeSZIHcspvv9f+ajrstg/hBfv+sfkQ/eKD3aSRMmdxZOv9Y+gkR3OSQ14bzpXwoV+ZKY56gXe7LWvcnc0KwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vida\\Desktop\\Ja\\zavrseni\\VehicleDBCoreProject - s filter,sort,page\\Model.Common\\Vehicle.Model.Common.csproj",
+  "projectFilePath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

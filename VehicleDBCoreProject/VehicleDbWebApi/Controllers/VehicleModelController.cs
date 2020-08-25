@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Vehicle.Common;
 using Vehicle.Model;
@@ -15,9 +16,12 @@ namespace Vehicle.VehicleDbWebApi.Controllers
     {
         protected IVehicleModelService Service { get; private set; }
 
-        public VehicleModelController(IVehicleModelService service)
+        protected IMapper Mapper;
+
+        public VehicleModelController(IVehicleModelService service, IMapper mapper)
         {
             Service = service;
+            Mapper = mapper;
         }
 
         // GET: api/VehicleModel
@@ -44,15 +48,15 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
         // POST api/VehicleModel
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] VehicleModel newModel)
+        public async Task<IActionResult> Post([FromBody] VehicleModelRest newModel)
         {
-            await Service.AddVehicleModelAsync(newModel);
+            await Service.AddVehicleModelAsync(Mapper.Map<Vehicle.Model.VehicleModel>(newModel));
             return CreatedAtAction(nameof(Get), new { id = newModel.VehicleModelId }, newModel);
         }
 
         // PUT api/VehicleModel/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] VehicleModel changeModel)
+        public async Task<IActionResult> Put(int id, [FromBody] VehicleModelRest changeModel)
         {
             if (id != changeModel.VehicleModelId)
             {
@@ -61,7 +65,7 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
             if (await Service.ModelExists(id))
             {
-                await Service.UpdateVehicleModelAsync(id, changeModel);
+                await Service.UpdateVehicleModelAsync(id, Mapper.Map<Vehicle.Model.VehicleModel>(changeModel));
                 return Ok();
             }
 

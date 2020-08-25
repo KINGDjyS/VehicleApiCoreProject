@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FN3qhoBhsHFILNwVH5XPnNh70Q50VhTMKR2BZIXUuk4sgS/s1SnRdWE6mj24gIbBxxgjG6zGzE8vFVmvV6aX3A==",
+  "dgSpecHash": "77KGVKcgdQyjK9HfoKDSM7V0gPws8auoGqMiFU77d2EavLQlKT9t+q+NECSZrSME6lvh+i47O+3gkV4nIOJGvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\VehicleDbWebApi\\Vehicle.VehicleDbWebApi.csproj",
+  "projectFilePath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\VehicleDbWebApi\\Vehicle.VehicleDbWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Djuka\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\Djuka\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

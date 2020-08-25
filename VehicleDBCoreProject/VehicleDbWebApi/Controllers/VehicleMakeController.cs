@@ -1,11 +1,7 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using Autofac.Features.Metadata;
+﻿using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Vehicle.Common;
-using Vehicle.DAL.Entities;
-using Vehicle.Model;
 using Vehicle.Service.Common;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -19,9 +15,12 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
         protected IVehicleMakeService Service { get; private set; }
 
-        public VehicleMakeController(IVehicleMakeService service)
+        protected IMapper Mapper;
+
+        public VehicleMakeController(IVehicleMakeService service, IMapper mapper)
         {
             Service = service;
+            Mapper = mapper;
         }
 
         // GET: api/VehicleMake
@@ -49,15 +48,15 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
         // POST api/VehicleMake
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] VehicleMake newMaker)
+        public async Task<IActionResult> Post([FromBody] VehicleMakeRest newMaker)
         {
-            await Service.AddVehicleMakerAsync(newMaker);
+            await Service.AddVehicleMakerAsync(Mapper.Map<Vehicle.Model.VehicleMake>(newMaker));
             return CreatedAtAction(nameof(Get), new { id = newMaker.VehicleMakeId }, newMaker);
         }
 
         // PUT api/VehicleMake/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] VehicleMake changeMaker)
+        public async Task<IActionResult> Put(int id, [FromBody] VehicleMakeRest changeMaker)
         {
             if (id != changeMaker.VehicleMakeId)
             {
@@ -66,7 +65,7 @@ namespace Vehicle.VehicleDbWebApi.Controllers
 
             if (await Service.MakerExists(id))
             {
-                await Service.UpdateVehicleMakerAsync(id, changeMaker);
+                await Service.UpdateVehicleMakerAsync(id, Mapper.Map<Vehicle.Model.VehicleMake>(changeMaker));
                 return Ok();
             }
 

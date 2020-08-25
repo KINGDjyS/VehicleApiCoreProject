@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O1Khle8QTxRu2MCQdF9k6e81Fglmdw6ygLplyBbOU2g2WrUr8WGOfzUT/FxEkrhvYF3GpqqZkkpIi1nxjmBj+w==",
+  "dgSpecHash": "rWAVQ7oFtpyoyyDd4f82u94xGjUSjGqmkMIBxClAGCvAYm0uIAXG5lvZeZ0yO5+02Z0NZC6kI8ONWy67mnWZxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
+  "projectFilePath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4dqdPTvCFWzI7E0jsS02nfm+sUVcpjShQe2ckhg2fQtfBPcqZ+oE2QpzSriA8TdJMVD/kcy3XROGPMOQU4onTA==",
+  "dgSpecHash": "5wAzxSNTUDLrGF36uH+aIBnTsS+ZLtOD4DPub731FnIHjmGCFhniwB6rVq+qxTvv7I5WiZzVaTGtNY+mV3TKjg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj",
+  "projectFilePath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Service.Common\\Vehicle.Service.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Djuka\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Djuka\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

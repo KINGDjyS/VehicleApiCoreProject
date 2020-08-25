@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+      "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
       "projectName": "Vehicle.Model.Common",
-      "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+      "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
       "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\obj\\",
+      "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",

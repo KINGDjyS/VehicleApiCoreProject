@@ -5007,11 +5007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
       "projectName": "Vehicle.DAL",
-      "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+      "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
       "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",

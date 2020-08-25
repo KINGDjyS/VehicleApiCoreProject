@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {}
+    "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+    "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
         "projectName": "Vehicle.DAL",
-        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
+        "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj",
         "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
+    "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
         "projectName": "Vehicle.Model.Common",
-        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
+        "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj",
         "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\obj\\",
+        "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
+    "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
         "projectName": "Vehicle.Repository.Common",
-        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
+        "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\Vehicle.Repository.Common.csproj",
         "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Repository.Common\\obj\\",
+        "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Repository.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -153,14 +153,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
-                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
+              "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\DAL\\Vehicle.DAL.csproj"
               },
-              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
-                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj"
+              "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Model.Common\\Vehicle.Model.Common.csproj"
               },
-              "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
-                "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj"
+              "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
+                "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj"
               }
             }
           }
@@ -192,14 +192,14 @@
         }
       }
     },
-    "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
+    "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
+        "projectUniqueName": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
         "projectName": "Vehicle.Common",
-        "projectPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
+        "projectPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\Vehicle.Common.csproj",
         "packagesPath": "C:\\Users\\Djuka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Djuka\\Desktop\\VehicleDBCoreProject\\Vehicle.Common\\obj\\",
+        "outputPath": "C:\\Users\\Djuka\\source\\repos\\VehicleDBCoreProject\\Vehicle.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Djuka\\AppData\\Roaming\\NuGet\\NuGet.Config",

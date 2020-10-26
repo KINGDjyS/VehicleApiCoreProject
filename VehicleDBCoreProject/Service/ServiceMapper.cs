@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Model;
-using Model.Common;
+using Vehicle.Model;
+using Vehicle.Model.Common;
 
 namespace Service
 {
@@ -8,12 +8,12 @@ namespace Service
     {
         public ServiceMapper()
         {
-            CreateMap<DAL.Entities.VehicleMakeEntity, VehicleMake>().ReverseMap();
-            CreateMap<DAL.Entities.VehicleMakeEntity, IVehicleMake>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleMakeEntity, VehicleMake>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleMakeEntity, IVehicleMake>().ReverseMap();
             CreateMap<VehicleMake, IVehicleMake>().ReverseMap();
 
-            CreateMap<DAL.Entities.VehicleModelEntity, VehicleModel>().ReverseMap();
-            CreateMap<DAL.Entities.VehicleModelEntity, IVehicleModel>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleModelEntity, VehicleModel>().ReverseMap();
+            CreateMap<Vehicle.DAL.Entities.VehicleModelEntity, IVehicleModel>().ReverseMap();
             CreateMap<VehicleModel, IVehicleModel>().ReverseMap();
         }
     }

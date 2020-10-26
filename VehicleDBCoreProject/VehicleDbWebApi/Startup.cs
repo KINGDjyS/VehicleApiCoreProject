@@ -15,6 +15,7 @@ namespace VehicleDbWebApi
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +27,13 @@ namespace VehicleDbWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().SetIsOriginAllowedToAllowWildcardSubdomains();
+                });
+            });
             services.AddControllers();
             services.AddDbContext<Vehicle.DAL.VehicleDBContext>();
         }
@@ -58,6 +66,8 @@ namespace VehicleDbWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

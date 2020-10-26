@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicle.Model", "Model\Vehi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicle.Service", "Service\Vehicle.Service.csproj", "{585DC667-FD87-497B-B8CE-050EBE73E0A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle.Common", "Vehicle.Common\Vehicle.Common.csproj", "{3F3000B7-9B00-41E1-9A8D-C695D7290A5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicle.Common", "Vehicle.Common\Vehicle.Common.csproj", "{3F3000B7-9B00-41E1-9A8D-C695D7290A5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

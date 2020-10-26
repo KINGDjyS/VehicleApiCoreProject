@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Repository",
+    "\\Service",
+    "\\Vehicle.React",
+    "\\Vehicle.React\\src",
+    "\\Vehicle.React\\src\\Components",
+    "\\Vehicle.React\\src\\Components\\MakersMock",
+    "\\Vehicle.React\\src\\Components\\ModelsAPI",
     "\\VehicleDbWebApi",
     "\\VehicleDbWebApi\\Controllers"
   ],
-  "SelectedNode": "\\VehicleDbWebApi\\Controllers\\VehicleMakeController.cs",
+  "SelectedNode": "\\Vehicle.React\\src\\Components\\MakersAPI\\CreateUpdateMaker.js",
   "PreviewInSolutionExplorer": false
 }

@@ -12,6 +12,7 @@
           "Vehicle.Repository.Common": "1.0.0",
           "Vehicle.Service.Common": "1.0.0",
           "Autofac": "5.2.0.0",
+          "AutoMapper": "10.0.0.0",
           "Repository.Common": "1.0.0.0"
         },
         "runtime": {
@@ -908,6 +909,14 @@
           }
         }
       },
+      "AutoMapper/10.0.0.0": {
+        "runtime": {
+          "AutoMapper.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
+          }
+        }
+      },
       "Repository.Common/1.0.0.0": {
         "runtime": {
           "Repository.Common.dll": {
@@ -1557,6 +1566,11 @@
       "sha512": ""
     },
     "Autofac/5.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/10.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

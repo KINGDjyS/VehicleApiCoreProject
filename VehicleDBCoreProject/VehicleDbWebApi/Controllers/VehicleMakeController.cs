@@ -51,7 +51,8 @@ namespace Vehicle.VehicleDbWebApi.Controllers
         public async Task<IActionResult> Post([FromBody] VehicleMakeRest newMaker)
         {
             await Service.AddVehicleMakerAsync(Mapper.Map<Vehicle.Model.VehicleMake>(newMaker));
-            return CreatedAtAction(nameof(Get), new { id = newMaker.VehicleMakeId }, newMaker);
+            //return CreatedAtAction(nameof(Get), new { id = newMaker.VehicleMakeId }, newMaker);
+            return Ok();
         }
 
         // PUT api/VehicleMake/5

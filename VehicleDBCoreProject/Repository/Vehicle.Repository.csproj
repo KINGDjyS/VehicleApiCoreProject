@@ -12,13 +12,13 @@
 
   <ItemGroup>
     <Reference Include="Autofac">
-      <HintPath>..\..\..\.nuget\packages\autofac\5.2.0\lib\net461\Autofac.dll</HintPath>
+      <HintPath>..\..\..\..\.nuget\packages\autofac\5.2.0\lib\net461\Autofac.dll</HintPath>
     </Reference>
     <Reference Include="Autofac.Extensions.DependencyInjection">
-      <HintPath>..\..\..\.nuget\packages\autofac.extensions.dependencyinjection\6.0.0\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll</HintPath>
+      <HintPath>..\..\..\..\.nuget\packages\autofac.extensions.dependencyinjection\7.0.2\lib\netstandard2.1\Autofac.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper">
-      <HintPath>..\..\..\.nuget\packages\automapper\9.0.0\lib\net461\AutoMapper.dll</HintPath>
+      <HintPath>..\..\..\..\.nuget\packages\automapper\10.0.0\lib\net461\AutoMapper.dll</HintPath>
     </Reference>
   </ItemGroup>
 

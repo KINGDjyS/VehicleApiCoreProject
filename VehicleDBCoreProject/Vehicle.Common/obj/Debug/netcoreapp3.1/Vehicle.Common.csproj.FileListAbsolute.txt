@@ -7,3 +7,12 @@ C:\Users\Vida\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcore
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.dll
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.pdb
 C:\Users\Vida\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.csprojAssemblyReference.cache
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.deps.json
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.dll
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\bin\Debug\netcoreapp3.1\Vehicle.Common.pdb
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.csprojAssemblyReference.cache
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.AssemblyInfoInputs.cache
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.AssemblyInfo.cs
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.csproj.CoreCompileInputs.cache
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.dll
+C:\Users\Djuka\source\repos\VehicleDBCoreProject\Vehicle.Common\obj\Debug\netcoreapp3.1\Vehicle.Common.pdb
